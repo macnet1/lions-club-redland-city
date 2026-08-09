@@ -13,29 +13,17 @@ A simple, free-to-host website for the Lions Club of Redland City. Plain HTML/CS
 
 ## Things to update with real info
 
-- **Logo**: `images/emblem.svg` is a placeholder emblem. Replace it with your official club logo/crest (see below).
 - **Email**: currently set to `mandteresa@gmail.com` in every page footer and the contact page — update if you want a different club address.
 - **Meeting schedule & location**: placeholder in `events.html` — replace with real dates/venue.
 - **Donation details**: `donate.html` has no live payment link yet — add a PayPal/bank/Givewell link when ready.
 - **Contact form**: uses a `mailto:` action, which opens the visitor's email app. For an automated form (no email client needed), sign up free at [Formspree](https://formspree.io) and swap the `action` attribute in `contact.html`.
+- **Member/event photos**: the homepage "Our Redland City" gallery currently only has landmark photos (Cleveland Point Light, Wellington Point Reserve, Toondah Harbour) sourced from Wikimedia Commons under CC BY-SA. Add real photos of members and club events when you have them — see below.
 
-## Using your official club logo
+## Adding photos of members or events
 
-If you have a logo image file (PNG/JPG/SVG):
-
-1. Save it into the `images/` folder, e.g. `images/lions-logo.png`.
-2. In every HTML file, replace:
-   ```html
-   <img src="images/emblem.svg" alt="Lions Club of Redland City emblem" class="brand-emblem">
-   ```
-   with:
-   ```html
-   <img src="images/lions-logo.png" alt="Lions Club of Redland City emblem" class="brand-emblem">
-   ```
-3. Also update the favicon line in each `<head>`:
-   ```html
-   <link rel="icon" href="images/lions-logo.png">
-   ```
+1. Save the photo file into `images/`, e.g. `images/2026-working-bee.jpg`.
+2. Add a new card inside the `.photo-grid` in `index.html` (copy the pattern of an existing `<figure class="photo-card">` block), pointing `src` at your new file and updating the caption. Drop the `credit` line for your own photos — it's only needed for the Commons-sourced ones.
+3. Get consent before publishing recognisable photos of people, especially minors — standard practice for a public-facing club site.
 
 ## Deploying free on GitHub Pages
 

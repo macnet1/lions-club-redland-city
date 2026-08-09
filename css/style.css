@@ -269,6 +269,41 @@ h2.section-title {
   padding: 2.5rem 1.25rem;
 }
 
+/* Photo gallery */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.photo-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.photo-card figcaption {
+  padding: 0.85rem 1rem;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.photo-card figcaption .credit {
+  display: block;
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+.photo-card figcaption .credit a { color: #6b7280; }
+
 /* Tables (events) */
 table.events-table {
   width: 100%;
