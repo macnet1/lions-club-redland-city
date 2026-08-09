@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Lions Club of Redland City</title>
+<meta name="description" content="Get in touch with the Lions Club of Redland City.">
+<link rel="icon" href="images/lions-logo.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <img src="images/lions-logo.png" alt="Lions Club of Redland City — 60th Anniversary 1966-2026" class="brand-logo">
+      <span class="brand-text">
+        <span class="club-tagline">We Serve</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="membership.html">Join Us</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding: 2.75rem 1.25rem;">
+  <h1>Get in Touch</h1>
+  <p>Questions about membership, events, or sponsorship? We'd love to hear from you.</p>
+</section>
+
+<section>
+  <div class="section-inner grid" style="grid-template-columns: 1.1fr 1fr; align-items: start;">
+    <div>
+      <h2 class="section-title">Send a Message</h2>
+      <form class="contact-form" action="mailto:mandteresa@gmail.com" method="post" enctype="text/plain">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="Name" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="Email" required>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="Message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <div class="note">
+        This form opens your email app to send the message. For a fully automated form, connect a free service like Formspree and update the form's <code>action</code> in <code>contact.html</code>.
+      </div>
+    </div>
+    <div>
+      <h2 class="section-title">Contact Details</h2>
+      <div class="card">
+        <h3>Email</h3>
+        <p><a href="mailto:mandteresa@gmail.com">mandteresa@gmail.com</a></p>
+        <h3>Location</h3>
+        <p>Redland City, Queensland, Australia</p>
+        <h3>Meetings</h3>
+        <p>See our <a href="events.html">Events page</a> for the current meeting schedule.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <h4>Lions Club of Redland City</h4>
+      <p>Serving Redland City, Queensland, as part of Lions Clubs International.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <p><a href="about.html">About Us</a></p>
+      <p><a href="events.html">Events</a></p>
+      <p><a href="membership.html">Membership</a></p>
+      <p><a href="donate.html">Donate</a></p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>Email: <a href="mailto:mandteresa@gmail.com">mandteresa@gmail.com</a></p>
+      <p>Redland City, Queensland, Australia</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; <span id="current-year"></span> Lions Club of Redland City. Proud member of Lions Clubs International.
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
