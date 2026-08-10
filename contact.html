@@ -42,7 +42,9 @@
   <div class="section-inner grid" style="grid-template-columns: 1.1fr 1fr; align-items: start;">
     <div>
       <h2 class="section-title">Send a Message</h2>
-      <form class="contact-form" action="mailto:redlandcity@lions201q1.org.au" method="post" enctype="text/plain">
+      <form class="contact-form" action="https://formspree.io/f/mqpzpbby" method="POST">
+        <input type="hidden" name="_subject" value="New message from Lions Club of Redland City website">
+        <input type="text" name="_gotcha" style="display:none">
         <div>
           <label for="name">Name</label>
           <input type="text" id="name" name="Name" required>
@@ -58,7 +60,7 @@
         <button type="submit" class="btn">Send Message</button>
       </form>
       <div class="note">
-        This form opens your email app to send the message. For a fully automated form, connect a free service like Formspree and update the form's <code>action</code> in <code>contact.html</code>.
+        Messages submitted here are sent straight to the club via Formspree — no email app required.
       </div>
     </div>
     <div>

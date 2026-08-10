@@ -10,14 +10,23 @@ A simple, free-to-host website for the Lions Club of Redland City. Plain HTML/CS
 - `membership.html` — Join us
 - `donate.html` — Donate / sponsorship
 - `contact.html` — Contact form + details
+- `kindness-project.html` — Redlands Kindness Project info + nomination form
 
 ## Things to update with real info
 
 - **Email**: currently set to `redlandcity@lions201q1.org.au` in every page footer and the contact page — update if you want a different club address.
 - **Meeting schedule & location**: placeholder in `events.html` — replace with real dates/venue.
 - **Donation details**: `donate.html` has no live payment link yet — add a PayPal/bank/Givewell link when ready.
-- **Contact form**: uses a `mailto:` action, which opens the visitor's email app. For an automated form (no email client needed), sign up free at [Formspree](https://formspree.io) and swap the `action` attribute in `contact.html`.
 - **Member/event photos**: the homepage "Our Redland City" gallery currently only has landmark photos (Cleveland Point Light, Wellington Point Reserve, Toondah Harbour) sourced from Wikimedia Commons under CC BY-SA. Add real photos of members and club events when you have them — see below.
+
+## Contact & nomination forms (Formspree)
+
+Both `contact.html` and `kindness-project.html` submit through [Formspree](https://formspree.io) free forms — no email client needed on the visitor's end:
+
+- Contact form → `https://formspree.io/f/mqpzpbby`
+- Kindness Project nomination form → `https://formspree.io/f/xkjwjbbw`
+
+Formspree sends a confirmation email the first time a form is set up — make sure that's been confirmed in the account it's tied to, otherwise submissions won't deliver. To change where submissions go, or to see past submissions, log into the Formspree dashboard. To point a form at a different endpoint, swap the `action` URL in that page's `<form>` tag.
 
 ## Adding photos of members or events
 
