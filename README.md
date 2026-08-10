@@ -13,7 +13,7 @@ A simple, free-to-host website for the Lions Club of Redland City. Plain HTML/CS
 
 ## Things to update with real info
 
-- **Email**: currently set to `mandteresa@gmail.com` in every page footer and the contact page — update if you want a different club address.
+- **Email**: currently set to `redlandcity@lions201q1.org.au` in every page footer and the contact page — update if you want a different club address.
 - **Meeting schedule & location**: placeholder in `events.html` — replace with real dates/venue.
 - **Donation details**: `donate.html` has no live payment link yet — add a PayPal/bank/Givewell link when ready.
 - **Contact form**: uses a `mailto:` action, which opens the visitor's email app. For an automated form (no email client needed), sign up free at [Formspree](https://formspree.io) and swap the `action` attribute in `contact.html`.
