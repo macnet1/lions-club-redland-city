@@ -76,7 +76,9 @@
   <div class="section-inner">
     <h2 class="section-title">Nominate Someone</h2>
     <p>Know someone doing quiet good in Redland City? Tell us about them below.</p>
-    <form class="contact-form" action="mailto:redlandcity@lions201q1.org.au" method="post" enctype="text/plain">
+    <form class="contact-form" action="https://formspree.io/f/xkjwjbbw" method="POST">
+      <input type="hidden" name="_subject" value="New Redlands Kindness Project Nomination">
+      <input type="text" name="_gotcha" style="display:none">
       <div>
         <label for="your-name">Your Name</label>
         <input type="text" id="your-name" name="Your Name" required>
@@ -96,7 +98,7 @@
       <button type="submit" class="btn">Submit Nomination</button>
     </form>
     <div class="note">
-      This form opens your email app to send the nomination. For a fully automated form, connect a free service like Formspree and update the form's <code>action</code> in <code>kindness-project.html</code>.
+      Nominations submitted here are sent straight to the club via Formspree — no email app required.
     </div>
   </div>
 </section>
