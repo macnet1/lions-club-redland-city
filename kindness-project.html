@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redlands Kindness Project — Lions Club of Redland City</title>
+<meta name="description" content="Nominate someone who quietly makes a positive difference in Redland City. The Redlands Kindness Project recognises everyday acts of kindness in our community.">
+<link rel="icon" href="images/lions-logo.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <img src="images/lions-logo.png" alt="Lions Club of Redland City — 60th Anniversary 1966-2026" class="brand-logo">
+      <span class="brand-text">
+        <span class="club-tagline">We Serve</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="kindness-project.html" class="active">Kindness Project</a></li>
+        <li><a href="membership.html">Join Us</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding: 2.75rem 1.25rem;">
+  <h1>Redlands Kindness Project</h1>
+  <p>Recognising the people who quietly make Redland City a better place.</p>
+</section>
+
+<section>
+  <div class="section-inner">
+    <h2 class="section-title">About the Project</h2>
+    <p>The Redlands Kindness Project is a Lions Club of Redland City initiative that shines a light on community members who quietly make a positive difference — neighbours, volunteers, and everyday local heroes. Anyone in the community can nominate someone for recognition, and selected nominees are acknowledged through our club communications and invited to an end-of-year celebration.</p>
+
+    <div class="note">
+      Before we publicly share any nominee's story, name, or photo, we'll contact you and the nominee to get their permission first.
+    </div>
+
+    <h2 class="section-title">How It Works</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>1. Nominate</h3>
+        <p>Fill in the form below with the nominee's name and a short note about why they deserve recognition.</p>
+      </div>
+      <div class="card">
+        <h3>2. Review</h3>
+        <p>Our project team reviews nominations and follows up with nominators to confirm details.</p>
+      </div>
+      <div class="card">
+        <h3>3. Celebrate</h3>
+        <p>Selected nominees are recognised through our communications and invited to a club celebration event.</p>
+      </div>
+    </div>
+
+    <h2 class="section-title">Key Dates</h2>
+    <ul>
+      <li><strong>September 2026:</strong> Community nominations open.</li>
+      <li><strong>October 2026 &ndash; May 2027:</strong> Nominees recognised on a rolling basis.</li>
+      <li><strong>June 2027:</strong> Recipients celebrated at a club event.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="section-inner">
+    <h2 class="section-title">Nominate Someone</h2>
+    <p>Know someone doing quiet good in Redland City? Tell us about them below.</p>
+    <form class="contact-form" action="mailto:redlandcity@lions201q1.org.au" method="post" enctype="text/plain">
+      <div>
+        <label for="your-name">Your Name</label>
+        <input type="text" id="your-name" name="Your Name" required>
+      </div>
+      <div>
+        <label for="your-email">Your Email</label>
+        <input type="email" id="your-email" name="Your Email" required>
+      </div>
+      <div>
+        <label for="nominee-name">Nominee's Name</label>
+        <input type="text" id="nominee-name" name="Nominee Name" required>
+      </div>
+      <div>
+        <label for="reason">Why are they deserving of recognition?</label>
+        <textarea id="reason" name="Reason for Nomination" required></textarea>
+      </div>
+      <button type="submit" class="btn">Submit Nomination</button>
+    </form>
+    <div class="note">
+      This form opens your email app to send the nomination. For a fully automated form, connect a free service like Formspree and update the form's <code>action</code> in <code>kindness-project.html</code>.
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <h4>Lions Club of Redland City</h4>
+      <p>Serving Redland City, Queensland, as part of Lions Clubs International.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <p><a href="about.html">About Us</a></p>
+      <p><a href="events.html">Events</a></p>
+      <p><a href="membership.html">Membership</a></p>
+      <p><a href="donate.html">Donate</a></p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>Email: <a href="mailto:redlandcity@lions201q1.org.au">redlandcity@lions201q1.org.au</a></p>
+      <p>Facebook: <a href="https://www.facebook.com/LionsClubofRedlandCity/" target="_blank" rel="noopener">LionsClubofRedlandCity</a></p>
+      <p>Redland City, Queensland, Australia</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; <span id="current-year"></span> Lions Club of Redland City. Proud member of Lions Clubs International.
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
