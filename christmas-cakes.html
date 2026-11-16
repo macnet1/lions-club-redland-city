@@ -186,9 +186,33 @@
   }
   .where-box h2 { margin: 0 0 0.75rem; font-size: 2rem; }
   .where-box p { font-size: 1.15rem; margin: 0 auto 1.5rem; max-width: 600px; color: #e3f6ec; }
+  .locations {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 1.25rem;
+    max-width: 560px;
+    display: grid;
+    gap: 0.9rem;
+    text-align: left;
+  }
+  .locations li {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    background: #fff;
+    color: var(--ink);
+    border-radius: 14px;
+    padding: 1rem 1.25rem;
+    border-left: 8px solid var(--lions-gold);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  }
+  .locations li:nth-child(2) { border-left-color: var(--xmas-red); }
+  .locations strong { color: var(--xmas-red-dark); font-size: 1.15rem; }
+  .locations .loc-icon { font-size: 1.8rem; }
+  .where-box p.contact-line { margin: 1.5rem auto 1rem; font-size: 1.05rem; }
   .where-box .soon {
     display: inline-block;
-    margin-top: 1.25rem;
+    margin-top: 0.25rem;
     font-size: 0.95rem;
     color: #fff;
     background: rgba(255,255,255,0.15);
@@ -310,12 +334,24 @@
 <section class="xmas-cream">
   <div class="where-box">
     <h2>Where Can I Buy One?</h2>
-    <p>Get in touch with the Lions Club of Redland City and we'll let you know how to get your Christmas cakes.</p>
+    <p>Pick up your Lions Christmas cakes at these Cleveland locations:</p>
+    <ul class="locations">
+      <li>
+        <span class="loc-icon" aria-hidden="true">&#127856;</span>
+        <span><strong>Westpac Cleveland</strong></span>
+      </li>
+      <li>
+        <span class="loc-icon" aria-hidden="true">&#127876;</span>
+        <span><strong>Cleveland Central</strong><br>
+        9am to 1pm every Wednesday, Thursday and Saturday until Christmas</span>
+      </li>
+    </ul>
+    <span class="soon">More locations coming soon</span>
+    <p class="contact-line">Can't make it? Get in touch and we'll help you get your cakes.</p>
     <div class="btn-row">
       <a href="contact.html" class="btn btn-xmas">Contact Us</a>
       <a href="mailto:redlandcity@lions201q1.org.au?subject=Lions%20Christmas%20Cakes" class="btn btn-outline" style="border-color:#fff; color:#fff; border-radius:999px; padding:0.9rem 1.8rem;">Email Us</a>
     </div>
-    <span class="soon">Local places to buy are coming soon</span>
   </div>
 </section>
 
