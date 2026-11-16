@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Christmas Cakes — Lions Club of Redland City</title>
-<meta name="description" content="Lions Christmas Cakes are back! 1kg cakes $17 and 80g mini cakes $3 from the Lions Club of Redland City. Every purchase helps fund community projects.">
+<title>Christmas Cakes &amp; Puddings — Lions Club of Redland City</title>
+<meta name="description" content="Lions Christmas Cakes and Puddings are back, including gluten free! 1kg cakes $17 and 80g mini cakes $3 from the Lions Club of Redland City. Every purchase helps fund community projects.">
 <link rel="icon" href="images/lions-logo.png">
 <link rel="stylesheet" href="css/style.css">
 <style>
@@ -130,12 +130,27 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
   .range-card:nth-child(2) { border-top-color: var(--xmas-green); }
+  .range-card:nth-child(3) { border-top-color: var(--lions-gold); }
+  .range-card:nth-child(4) { border-top-color: var(--lions-blue); }
   .range-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 16px 36px rgba(164,22,26,0.18);
   }
-  .range-grid.two { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); max-width: 900px; margin: 0 auto; }
+  .range-grid.two { grid-template-columns: repeat(2, 1fr); max-width: 900px; margin: 0 auto; }
+  @media (max-width: 640px) { .range-grid.two { grid-template-columns: 1fr; } }
   .range-card .product-photo { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 12px; margin: 0 0 1.25rem; }
+  .where-box .stall-photo {
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center 35%;
+    border-radius: 16px;
+    margin: 0 auto 1.5rem;
+    border: 5px solid #fff;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+  }
+  .range-card .price.ask { font-size: 1.15rem; padding: 0.55rem 1.3rem; }
   .range-card .price {
     display: inline-block;
     margin-top: 1.1rem;
@@ -269,8 +284,8 @@
   </svg>
 
   <span class="eyebrow">Now on sale for Christmas</span>
-  <h1>Lions Christmas Cakes</h1>
-  <p>Australia's favourite Christmas cakes are back! Grab yours from the Lions Club of Redland City and help support our community at the same time.</p>
+  <h1>Lions Christmas Cakes &amp; Puddings</h1>
+  <p>Australia's favourite Christmas cakes and puddings are back! Grab yours from the Lions Club of Redland City and help support our community at the same time.</p>
   <div class="btn-row">
     <a href="contact.html" class="btn btn-xmas">Contact Us to Buy</a>
   </div>
@@ -281,18 +296,32 @@
 <section class="xmas-cream">
   <div class="section-inner">
     <h2 class="xmas-title">Our Christmas Range</h2>
-    <p class="xmas-sub">Delicious Christmas cakes available now. Perfect for gifting or enjoying yourself.</p>
+    <p class="xmas-sub">Delicious Christmas cakes and puddings available now, including gluten free. Perfect for gifting or enjoying yourself.</p>
 
     <div class="range-grid two">
       <div class="range-card">
-        <img src="images/xmas-cake-1kg.jpg" alt="Lions Traditional Christmas Cake in its gift box beside a sliced fruit cake topped with strawberries" class="product-photo">
+        <img src="images/xmas-real-cake-1kg.jpg" alt="Lions Traditional Christmas Cake 1kg gift box" class="product-photo">
         <h3>Lions Christmas Cake 1kg</h3>
         <p>The classic Lions fruit cake in a festive gift box. Perfect for the Christmas table or as a gift.</p>
         <span class="price">$17.00</span>
       </div>
 
       <div class="range-card">
-        <img src="images/xmas-mini-cake-80g.jpg" alt="Individually wrapped Lions Traditional Fruit Cake 80g mini cakes" class="product-photo">
+        <img src="images/xmas-real-pudding.jpg" alt="Lions Traditional Christmas Pudding 900g box beside a sliced pudding on a cake stand" class="product-photo">
+        <h3>Lions Christmas Pudding 900g</h3>
+        <p>A rich traditional pudding for the big day. Serve it warm with custard, cream or ice cream.</p>
+        <span class="price ask">Ask us for price</span>
+      </div>
+
+      <div class="range-card">
+        <img src="images/xmas-real-gluten-free.jpg" alt="Lions Gluten Free Fruit Cake box" class="product-photo">
+        <h3>Lions Gluten Free Fruit Cake</h3>
+        <p>All the Christmas flavour, made gluten free, so everyone at the table can have a slice.</p>
+        <span class="price ask">Ask us for price</span>
+      </div>
+
+      <div class="range-card">
+        <img src="images/xmas-real-mini.jpg" alt="Individually wrapped Lions Traditional Fruit Cake 80g mini cakes" class="product-photo">
         <h3>Lions Traditional Fruit Cake 80g</h3>
         <p>Individually wrapped mini cakes. Great for lunch boxes, stocking fillers and office treats.</p>
         <span class="price">$3.00</span>
@@ -306,7 +335,7 @@
 <section>
   <div class="section-inner">
     <h2 class="xmas-title">Why Buy a Lions Cake?</h2>
-    <p class="xmas-sub">Every cake sold helps fund Lions community projects, here in the Redlands and right across Australia.</p>
+    <p class="xmas-sub">Every cake and pudding sold helps fund Lions community projects, here in the Redlands and right across Australia.</p>
 
     <div class="why-grid">
       <div class="why-item red">
@@ -334,7 +363,8 @@
 <section class="xmas-cream">
   <div class="where-box">
     <h2>Where Can I Buy One?</h2>
-    <p>Pick up your Lions Christmas cakes at these Cleveland locations:</p>
+    <img src="images/christmas-cake-stall-volunteer.jpg" alt="A smiling Lions Club of Redland City volunteer at the Christmas cake and pudding stall in Cleveland Central" class="stall-photo">
+    <p>Pick up your Lions Christmas cakes and puddings at these Cleveland locations:</p>
     <ul class="locations">
       <li>
         <span class="loc-icon" aria-hidden="true">&#127856;</span>
@@ -347,7 +377,7 @@
       </li>
     </ul>
     <span class="soon">More locations coming soon</span>
-    <p class="contact-line">Can't make it? Get in touch and we'll help you get your cakes.</p>
+    <p class="contact-line">Can't make it? Get in touch and we'll help you get your cakes and puddings.</p>
     <div class="btn-row">
       <a href="contact.html" class="btn btn-xmas">Contact Us</a>
       <a href="mailto:redlandcity@lions201q1.org.au?subject=Lions%20Christmas%20Cakes" class="btn btn-outline" style="border-color:#fff; color:#fff; border-radius:999px; padding:0.9rem 1.8rem;">Email Us</a>
